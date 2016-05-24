@@ -1,10 +1,4 @@
 #!/usr/bin/env python
-# CS124 Homework 5 Jeopardy
-# Original written in Java by Sam Bowman (sbowman@stanford.edu)
-# Ported to Python by Milind Ganjoo (mganjoo@stanford.edu)
-
-# This is a gender classifier you can use.
-# There's nothing for you to implement here, hooray!
 
 class GenderClassifier:
     def __init__(self):
