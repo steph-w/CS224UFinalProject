@@ -10,8 +10,8 @@ class GenderClassifier:
     def __init__(self):
         # To stay current, we use only the most freshly
         # downloaded copies of 1990 census data.
-        self.male_names = self.load_dict("dist.male.first.tsv")
-        self.female_names = self.load_dict("dist.female.first.tsv")
+        self.male_names = self.load_dict("replaceNames\dist.male.first.tsv")
+        self.female_names = self.load_dict("replaceNames\dist.female.first.tsv")
 
     def guessGender(self, name):
         """This returns a guess of the gender of a name. A name is classified
