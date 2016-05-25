@@ -29,19 +29,20 @@ def main():
 				word = word.lower()
 				if "'" in word and word != "don't" and word != "didn't":
 					word = word[:word.index("'")]
-					wordEnd = "'s"
-				elif "." in word or "?" in word or "," in word or "!" in word or ":" in word or ";" in word:
+				elif "." in word or "?" in word or "," in word or "!" in word:
 					wordEnd = word[len(word) - 1:]
+					word = word[:len(word) - 1]
+				elif ":" in word or ";" in word:
 					word = word[:len(word) - 1]
 				g = gender.guessGender(word)
 				if g == "m":
-					listOfWords[i] = "Man" + wordEnd
+					listOfWords[i] = "00MALE00" + wordEnd
 					print line
 					line = " ".join(listOfWords)
 					print line
 				elif g == "f":
 					print line
-					listOfWords[i] = "Woman" + wordEnd
+					listOfWords[i] = "00FEMALE00" + wordEnd
 					line = " ".join(listOfWords)
 					print line
 
