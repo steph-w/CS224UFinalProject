@@ -1,6 +1,6 @@
 # CS224U Analysis of Gender Roles and Bias in Literary Portrayal of Characters
 ##Collaborators
-*Stephanie Wang
+* Stephanie Wang
 * Megha Srivastava
 * Sarai Gould
 
